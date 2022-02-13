@@ -37,6 +37,13 @@ const data = {
       quantity: 5,
       description: 'Item 5 description',
     },
+    {
+      id: 6,
+      name: 'Item 6',
+      price: 60,
+      quantity: 6,
+      description: 'Item 6 description',
+    }
   ],
 };
 
