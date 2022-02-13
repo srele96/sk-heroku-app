@@ -1,0 +1,11 @@
+{
+  "name": "sk-heroku-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "engines": {
+    "node": "16.13.1"
+  }
+}
