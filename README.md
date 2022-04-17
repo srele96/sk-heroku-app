@@ -12,3 +12,7 @@ Along the way I found out about following topics:
 - Monitoring deployment status.
 - Reading build logs.
 - Setting up deployment rules.
+
+## Now supports React
+
+I added React CDN scripts to see how does it play along with Pug template engine.
