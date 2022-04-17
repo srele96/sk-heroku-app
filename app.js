@@ -1,4 +1,9 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
+
+app.set('view engine', 'pug');
+
+app.use(express.static('public'));
 
 const data = {
   items: [
@@ -43,17 +48,16 @@ const data = {
       price: 60,
       quantity: 6,
       description: 'Item 6 description',
-    }
+    },
   ],
 };
 
-app.get('*', (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.send(data);
+app.get('/', (req, res) => {
+  res.render('index', { data: data });
 });
 
 let port = process.env.PORT;
-if (port == null || port == "") {
+if (port == null || port == '') {
   port = 8000;
 }
 
